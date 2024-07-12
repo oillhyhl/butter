@@ -1,0 +1,557 @@
+/* font-family: "Noto Serif"; */
+/* font-family: 'Eulyoo1945'; */
+/* font-family: 'NotoSansKR'; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: "Noto Serif";
+    font-size: 11px;
+    line-height: 1.5;
+    color: #666;
+    min-width: 1320px;
+    position: relative;
+    height: 100%;
+
+
+}
+
+/* -----돌아가는 텍스트---- */
+
+
+/*-----------------해더시작--------------  */
+header {
+    width: 1920px;
+    height: 71px;
+    background-color: #12403F;
+    position: relative;
+
+}
+
+
+/* 로고(가로), 메뉴 div 시작 */
+.logo_hori {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 32%;
+    left: -21%;
+}
+
+.center_logo {
+    display: block;
+    text-align: center;
+
+}
+
+
+/* 메뉴 5개 */
+
+.nav_bg {
+    margin: auto;
+    width: 897px;
+    height: 70px;
+    background-color: #12403F;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #0C2727;
+
+}
+
+.nav_li {
+    border-radius: 0px 10px 0px 10px;
+}
+
+/* top 로고 */
+.top_logo {
+    position: absolute;
+    top: -81%;
+    right: 105%;
+}
+
+/* nav 메뉴5개 시작 */
+.nav {
+    width: 1060px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex: 1;
+
+
+}
+
+.nav a {
+    font-family: "Noto Serif";
+    font-size: 15px;
+    color: antiquewhite;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+
+}
+
+/* 호버시 한글로 변경되게 함 */
+
+.nav>li {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav>li:hover {
+    background-color: #0C2727;
+}
+
+.nav span {
+    font-family: 'Eulyoo1945';
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    text-wrap: nowrap;
+    text-align: center;
+    opacity: 0;
+    padding: 16px 0px;
+    font-family: 'Eulyoo1945';
+
+}
+
+.nav a:hover b {
+    opacity: 0;
+}
+
+.nav a:hover span {
+    opacity: 1;
+}
+
+/*------nav 끝----- */
+
+/* 서브메뉴 꾸미기 */
+.sub a {
+    background-color: #12403F;
+    color: antiquewhite;
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.sub a:hover {
+    background-color: #0C2727;
+}
+
+/* 서브메뉴 띄우기, 없애기 */
+.sub {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    display: none;
+    border-radius: 0px 0 15px 15px;
+}
+
+.nav>li {
+    position: relative;
+}
+
+/* top_bn */
+
+.top_bn {
+    width: 1320px;
+    margin: auto;
+    color: antiquewhite;
+    padding-top: 250px;
+    z-index: -1;
+}
+
+.h1_bt_2 {
+    width: 80px;
+    height: 20px;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 100px;
+    background-color: #12403F;
+    padding: 5px 20px;
+    margin-left: 430px;
+    position: absolute;
+    top: 120%;
+    right: -70%;
+
+}
+
+.h1_bt_2:hover {
+    background-color: #0C2727;
+    border: 1px solid antiquewhite;
+
+
+}
+
+.text_span {
+    color: #2f9593;
+}
+
+.top_h1 {
+    margin: -45% 0 20px 0;
+    padding-left: 250px;
+    font-family: 'Eulyoo1945';
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.bn_text {
+    margin: 0 330px 20px 0px;
+    text-align: center;
+}
+
+.h1_bt {
+    width: 80px;
+    height: 20px;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 100px;
+    background-color: #12403F;
+    padding: 5px 20px;
+    margin-left: 430px;
+}
+
+.h1_bt:hover {
+    border: 1px solid antiquewhite;
+    background-color: #0C2727;
+}
+
+h6 {
+    font-size: 12px;
+    color: antiquewhite;
+    text-align: center;
+
+}
+
+.top_h1,
+.bn_text {
+    animation: smoke 4s ease-in-out infinite;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(-20px) scale(1.1);
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-40px) scale(1.2);
+        filter: blur(4px);
+    }
+}
+
+/*-------------해더끝---------------  */
+
+
+/* 글자올라가는 효과 커피자국 배경 */
+
+.text_h1 {
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'Eulyoo1945';
+    font-size: 14px;
+    font-family: 600;
+    color: #000;
+    z-index: -1;
+}
+
+
+.text-container {
+    /* overflow: hidden;
+    height: 100%;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Eulyoo1945';
+    font-size: 15px;
+    font-family: 600;
+    color: #000; */
+}
+
+.stain_h1 {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.stain {
+    margin: auto;
+    width: 1720px;
+}
+
+.stain_ul_1,
+.stain_ul_2,
+.stain_ul_3 {
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.text-container p {
+    margin: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slide-up 1s forwards;
+}
+
+[data-aos][data-aos][data-aos-delay="3500"].aos-animate {
+    transition-delay: 3.5s;
+}
+
+[data-aos][data-aos][data-aos-delay="4000"].aos-animate {
+    transition-delay: 4s;
+}
+
+[data-aos][data-aos][data-aos-delay="4500"].aos-animate {
+    transition-delay: 4.5s;
+}
+
+[data-aos][data-aos][data-aos-delay="5000"].aos-animate {
+    transition-delay: 5s;
+}
+
+
+/* Animation delay classes */
+/* .delay-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
+
+.delay-3 {
+    animation-delay: 1.5s;
+}
+
+.delay-4 {
+    animation-delay: 2s;
+}
+
+.delay-5 {
+    animation-delay: 2.5s;
+}
+
+.delay-6 {
+    animation-delay: 3s;
+}
+
+.delay-7 {
+    animation-delay: 3.5s;
+}
+
+.delay-8 {
+    animation-delay: 4s;
+}
+
+.delay-9 {
+    animation-delay: 4.5s;
+}
+
+.delay-10 {
+    animation-delay: 5s;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+} */
+
+/* 블랙티 재료 소개----------- */
+
+
+.intro {
+    margin: auto;
+}
+
+.intro_dl {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.intro_dt {
+    display: block;
+}
+
+
+
+
+.illustration {
+    margin: 80px auto;
+    padding-top: 50px;
+    width: 1000px;
+    height: 100%;
+
+
+}
+
+.illustration_ul_1 {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.illu_li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.illU_p {
+    padding: 10px 0 0 8px;
+}
+
+
+.img {
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.illu_li:hover .img {
+    transform: translateY(-20%);
+}
+
+
+
+/*-------------풋터 시작------------- */
+footer {
+    background: url(../img/foot_bg.png) no-repeat;
+    width: 1920px;
+    height: 400px;
+    margin: -240px auto;
+}
+
+/*  로고,텍스트 감싼 div */
+.foot {
+    width: 1320px;
+    margin: 15% auto;
+    color: #999;
+    font-family: 'NotoSansKR';
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.logo_verti {
+    padding: 150px 0 0 200px;
+
+}
+
+.foot_text {
+    padding: 200px 100px 0 0;
+}
+
+
+/* -------sns 아이콘들-------- */
+.sns_icon {
+    opacity: 100%;
+    position: absolute;
+    top: 12%;
+    left: 90%;
+
+}
+
+.sns_icon_ul {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+
+}
+
+.sns_icon_ul>li {
+    padding-left: 20px;
+}
+
+
+/* 회사소개,제휴/제안 등등 */
+.foot_intro {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.foot_intro a {
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+
+.foot_intro a:hover {
+    border-bottom: 1px solid #666;
+}
+
+/*  부산수영구 민락동 젠틀타워 1층 */
+.foot_end {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_end a {
+    color: #999;
+    padding-top: 20px;
+
+}
+
+/*  고객센터등등 */
+.foot_p {
+    display: block;
+    margin: 35px 0px 35px 100px;
+    font-size: 14px;
+}
